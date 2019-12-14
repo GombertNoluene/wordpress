@@ -1,0 +1,361 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+  font-family: 'Dosis',sans-serif;
+  margin : 0;
+  padding: 0;
+}
+
+/*HEADER*/
+header{
+	background-color: #395e1b;
+	font-size: 2.5rem;
+	justify-content: space-between;
+	display: flex;
+	align-items: center;
+}
+header ul li{
+	list-style-type: none;
+	color: white;
+}
+.menu-menu-principal-container a {
+	color: white;
+	font-size: 2rem;
+	padding-left: 1rem;
+	text-decoration: none;
+}
+
+header ul{
+	display: flex;
+	padding-right: 30px;
+}
+
+p{
+	margin: 0;
+	padding: 0;
+}
+
+/*BODY*/
+
+/*BANNIERE____________________________________________________________________________________________________________*/
+
+.banner {
+	display: block;
+	align-items: center;
+	justify-content: center;
+	padding: 5%;
+	line-height: 8rem;
+}
+
+.banner_baseline{
+	font-size: 2rem;
+	text-align: center;
+}
+.banner_title_brown{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 4rem;
+	text-align: center;
+}
+.banner_title_green{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 4rem;
+	color: #0d7619;
+	text-align: center;
+}
+.banner a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-size: 1.8rem;
+	background-color: #395e1b;
+	padding: 1.5rem;
+	border-radius: 5rem;	
+}
+.banner_register_link {
+	padding-bottom: 6rem;
+	margin-top: 3rem;
+	text-align: center;
+	justify-content: center;
+	position: center;
+}
+
+
+/*CONFERENCE_____________________________________________________________________________________________________*/
+
+
+.conference_title{
+	font-size: 4rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	padding-top: 2rem;
+	padding-bottom: 1.2rem;
+	position: relative;
+}
+
+.conference_title:before{
+	content: '';
+	position: absolute;
+	height: 0.1rem;
+	right: 40%;
+	left: 40%;
+	bottom: 0;
+	background-color: #333;
+}
+
+.conference_texte{
+	max-width: 70rem;
+	margin: 0 auto;
+	font-size: 2rem;
+	padding-top: 5rem;
+	padding-bottom: 3rem;
+	justify-content: center;
+	text-align: center;
+	line-height: 3rem;
+}
+
+.conference_img{
+	overflow: hidden;
+	max-height: 25.2rem;
+}
+
+
+/*PROGRAMME________________________________________________________________________________________________________*/
+
+
+.programme{
+	background-color: #fffdf1;
+}
+
+.programme_title{
+	font-size: 4rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	padding-top: 2rem;
+	padding-bottom: 1.2rem;
+	position: relative;
+}
+.programme_title:before{
+	content: '';
+	position: absolute;
+	height: 0.1rem;
+	right: 40%;
+	left: 40%;
+	bottom: 0;
+	background-color: #333;
+}
+
+.programme_grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	text-align: center;
+}
+
+.programme_title_left{
+	color: #395e1b;
+	font-size: 2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 2rem;
+	padding-top: 5rem;
+	letter-spacing: 0.3rem;
+	padding-bottom: 3rem;
+}
+.programme_title_right{
+	color: #395e1b;
+	font-size: 2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 2rem;
+	padding-top: 5rem;
+	letter-spacing: 0.3rem;
+	padding-bottom: 3rem;
+}
+
+.programme_edt_matin{
+	padding-left: 20%;
+	text-align: left;
+	line-height: 4rem;
+}
+
+.programme_edt_matin_2{
+	padding-left: 20%;
+	text-align: left;
+	line-height: 4rem;
+}
+
+.programme_hour{
+	font-weight: bold;
+	padding : 0 auto;
+	margin: 0 auto;
+	font-size: 2rem;
+	display: inline-block;
+	padding-right: 3%;
+}
+
+.programme_description{
+	margin: 0 auto;
+	padding : 0 auto;
+	font-size: 2rem;
+	display: inline-block;
+}
+
+.programme_register_link{
+	padding-bottom: 6rem;
+	margin-top: 3rem;
+	text-align: center;
+	justify-content: center;
+	position: center;
+}
+
+.programme a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-size: 1.8rem;
+	background-color: #395e1b;
+	padding: 1.5rem;
+	border-radius: 5rem;
+}
+
+.programme_img{
+
+}
+
+
+/*LES ORATEURS____________________________________________________________________________________________________*/
+
+.orateur_title{
+	font-size: 4rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	padding-top: 2rem;
+	padding-bottom: 1.2rem;
+	position: relative;
+}
+.orateur_title:before{
+	content: '';
+	position: absolute;
+	height: 0.1rem;
+	right: 40%;
+	left: 40%;
+	bottom: 0;
+	background-color: #333;
+}
+
+.orateur_texte{
+	font-size: 2rem;
+	text-align: center;
+	position: relative;
+	padding-top: 2rem;
+	padding-bottom: 1.2rem;
+}
+
+.orateur_flex{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap; 
+	justify-content: center;
+}
+
+.orateur_personne{
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 3rem;
+}
+
+.orateur_repeteur_image{
+	border-radius: 50%;
+	width: 30%;
+}
+
+.orateur_repeteur_nom{
+	color: #395e1b;
+	font-size: 1.8rem;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 1.5rem;
+	justify-content: center;
+}
+
+.orateur_repeteur_description{
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-align: center;
+	justify-content: center;
+}
+
+.orateur_repeteur_video{
+	margin: 2rem 1rem;
+}
+
+.orateur_repeteur_video a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-size: 1.2rem;
+	background-color: #395e1b;
+	border-radius: 5rem;
+	padding: 0.5rem 1rem;
+}
+
+/*INFORMATION PRATIQUE_______________________________________________________________________________________________________*/
+
+.information_title{
+	font-size: 4rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	padding-top: 2rem;
+	padding-bottom: 1.2rem;
+	position: relative;
+}
+.information_title:before{
+	content: '';
+	position: absolute;
+	height: 0.1rem;
+	right: 40%;
+	left: 40%;
+	bottom: 0;
+	background-color: #333;
+}
+
+.information_vert{
+	background-color: #9acf64;
+	color: white;
+	font-size: 2rem;
+	margin: 2% 60% 2% 12%;
+	padding-bottom: 26%;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.information_vert_adress{
+	display: flex;
+	flex-direction: row;
+}
+
+.picto{
+	width: 13%;
+}
+.information_horaire{
+
+}
+.information_restaurant{
+
+}
