@@ -40,6 +40,29 @@ p{
 
 /*BODY*/
 
+/*GENERAL*/
+
+.title{
+	font-size: 4rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	padding-top: 2rem;
+	padding-bottom: 1.2rem;
+	position: relative;
+}
+
+.title:before{
+	content: '';
+	position: absolute;
+	height: 0.1rem;
+	right: 40%;
+	left: 40%;
+	bottom: 0;
+	background-color: #333;
+}
+
 /*BANNIERE____________________________________________________________________________________________________________*/
 
 .banner {
@@ -74,40 +97,18 @@ p{
 	font-size: 1.8rem;
 	background-color: #395e1b;
 	padding: 1.5rem;
-	border-radius: 5rem;	
+	border-radius: 5rem;
+
 }
+
 .banner_register_link {
 	padding-bottom: 6rem;
 	margin-top: 3rem;
-	text-align: center;
-	justify-content: center;
-	position: center;
+	float: center;
 }
 
 
 /*CONFERENCE_____________________________________________________________________________________________________*/
-
-
-.conference_title{
-	font-size: 4rem;
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: 500;
-	letter-spacing: 0.2rem;
-	padding-top: 2rem;
-	padding-bottom: 1.2rem;
-	position: relative;
-}
-
-.conference_title:before{
-	content: '';
-	position: absolute;
-	height: 0.1rem;
-	right: 40%;
-	left: 40%;
-	bottom: 0;
-	background-color: #333;
-}
 
 .conference_texte{
 	max-width: 70rem;
@@ -123,6 +124,7 @@ p{
 .conference_img{
 	overflow: hidden;
 	max-height: 25.2rem;
+	width: 100%;
 }
 
 
@@ -131,26 +133,6 @@ p{
 
 .programme{
 	background-color: #fffdf1;
-}
-
-.programme_title{
-	font-size: 4rem;
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: 500;
-	letter-spacing: 0.2rem;
-	padding-top: 2rem;
-	padding-bottom: 1.2rem;
-	position: relative;
-}
-.programme_title:before{
-	content: '';
-	position: absolute;
-	height: 0.1rem;
-	right: 40%;
-	left: 40%;
-	bottom: 0;
-	background-color: #333;
 }
 
 .programme_grid{
@@ -233,26 +215,6 @@ p{
 
 /*LES ORATEURS____________________________________________________________________________________________________*/
 
-.orateur_title{
-	font-size: 4rem;
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: 500;
-	letter-spacing: 0.2rem;
-	padding-top: 2rem;
-	padding-bottom: 1.2rem;
-	position: relative;
-}
-.orateur_title:before{
-	content: '';
-	position: absolute;
-	height: 0.1rem;
-	right: 40%;
-	left: 40%;
-	bottom: 0;
-	background-color: #333;
-}
-
 .orateur_texte{
 	font-size: 2rem;
 	text-align: center;
@@ -314,48 +276,126 @@ p{
 
 /*INFORMATION PRATIQUE_______________________________________________________________________________________________________*/
 
-.information_title{
-	font-size: 4rem;
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: 500;
-	letter-spacing: 0.2rem;
-	padding-top: 2rem;
-	padding-bottom: 1.2rem;
-	position: relative;
-}
-.information_title:before{
-	content: '';
-	position: absolute;
-	height: 0.1rem;
-	right: 40%;
-	left: 40%;
-	bottom: 0;
-	background-color: #333;
-}
-
 .information_vert{
-	background-color: #9acf64;
-	color: white;
-	font-size: 2rem;
-	margin: 2% 60% 2% 12%;
-	padding-bottom: 26%;
-	display: flex;
-	flex-direction: column;
-	flex: 1;
+	width: 15%;
+  	padding: 10vh 5vh 0vh 5vh;
+  	margin-left: 20vh;
+  	color: white;
+  	font-size: 2rem;
+  	background-color: #9acf64;
+  	text-align: left;
 }
 
 .information_vert_adress{
-	display: flex;
-	flex-direction: row;
+  height: 15vh;
+  display: flex;
+  border-bottom: solid 2px;
 }
 
-.picto{
-	width: 13%;
+.information_adress{
+	 width: 100%;
+  margin-top: 2vh;
+  margin-left: 5vh;
 }
+
+.information_vert_horaire{
+  height: 15vh;
+  margin-top: 5vh;
+  display: flex;
+  border-bottom: solid 2px;
+}
+ 
 .information_horaire{
+ width: 100%;
+  margin-left: 3vh;
+  background-repeat: no-repeat;
+}
+
+.information_vert_restaurant{
+	 height: 15vh;
+  margin-top: 5vh;
+  display: flex;
+}
+
+.information_restaurant{
+	  width: 100%;
+  margin-left: 5vh;
+  background-repeat: no-repeat;
+}
+
+.information_blanc{
+	padding: 2rem;
+	background-color: white;
+	display: block;
+	float: right;
+	position: relative;
+	bottom: 10rem;
+	right: 5rem;
+	border-radius: 5rem;
+	padding: 0.5rem 1rem;
 
 }
-.information_restaurant{
 
+.information_carte{
+	color: #395e1b;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+/*VIDEO________________________________*/
+.video_content{
+	margin: 5% 10%;
+}
+
+.video_grid_1{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	position: relative;
+}
+
+.video_image{
+	width: 95%;
+	display: block;
+}
+
+.video_title{
+	color: white;
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	position: absolute;
+	top: 35%;
+}
+
+.video_texte{
+	color: white;
+	font-size: 1.5rem;
+	text-transform: capitalize;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+}
+
+.video_grid_2{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	margin: 4% 0%;
+}
+
+.video_image_2{
+	margin: 2% 0%;
+	width: 100%;
+}
+
+.video_title_2{
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+.video_texte_2{
+	font-size: 1.2rem;
+}
+
+.v2{
+vertical-align: center;
 }
